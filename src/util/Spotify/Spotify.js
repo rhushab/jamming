@@ -30,9 +30,10 @@ const Spotify = {
 
   search(term) {
     accessToken = Spotify.getAccessToken();
+    const header_ = { Authorization: `Bearer ${accessToken}` };
     return fetch(`https://api.spotify.com/v1/search?type=track&q=${term}`, {
       method: 'GET',
-      headers: { Authorization: `Bearer ${accessToken}` },
+      headers: header_,
     })
       .then((response) => response.json())
       .then((jsonResponse) => {
