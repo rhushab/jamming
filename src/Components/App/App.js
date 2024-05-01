@@ -6,10 +6,24 @@ import SearchBar from '../SearchBar/SearchBar';
 import { Spotify } from '../../util/Spotify/Spotify';
 
 function App() {
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState([
+    {
+      name: 'name 1',
+      artist: 'artist 1',
+      album: 'album 1',
+      id: 1,
+    },
+  ]);
   const [playlistName, setPlaylistName] = useState('Playlist name');
 
-  const [playlistTracks, setPlaylistTracks] = useState([]);
+  const [playlistTracks, setPlaylistTracks] = useState([
+    {
+      name: 'name 1',
+      artist: 'artist 1',
+      album: 'album 1',
+      id: 1,
+    },
+  ]);
 
   function addTrack(track) {
     const existingTrack = playlistTracks.find((t) => t.id === track.id);
