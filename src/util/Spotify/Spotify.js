@@ -7,12 +7,8 @@ const Spotify = {
     // First check for the access token
     if (accessToken) return accessToken;
 
-    //const tokenInURL = window.location.href.match(/access_token=([^&]*)/);
-    //const expiryTime = window.location.href.match(/expires_in=([^&]*)/);
-
-    const urlParams = new URLSearchParams(window.location.hash.substring(1));
-    const tokenInURL = urlParams.get('access_token');
-    const expiryTime = urlParams.get('expires_in');
+    const tokenInURL = window.location.href.match(/access_token=([^&]*)/);
+    const expiryTime = window.location.href.match(/expires_in=([^&]*)/);
 
     // Second check for the access token
     if (tokenInURL && expiryTime) {
