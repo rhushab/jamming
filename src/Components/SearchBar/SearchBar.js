@@ -3,7 +3,8 @@ import styles from './SearchBar.module.css';
 function SearchBar(props) {
   const [term, setTerm] = useState('');
 
-  function passTerm() {
+  function passTerm(event) {
+    event.preventDefault();
     props.onSearch(term);
   }
 
