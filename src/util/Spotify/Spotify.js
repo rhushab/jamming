@@ -1,6 +1,6 @@
 let accessToken;
 const clientID = 'b2807a28a46941738487eaf69c8320cc';
-const redirectUrl = 'https:/makeyourplaylist.netlify.app';
+const redirectUrl = 'https://makeyourplaylist.netlify.app';
 
 const Spotify = {
   getAccessToken() {
