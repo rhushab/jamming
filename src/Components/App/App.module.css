@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 body,
 html,
 #root {
@@ -9,16 +11,16 @@ html {
 }
 
 h1 {
-  padding: .77rem 0;
+  padding: 0.77rem 0;
   background-color: #010c3f;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Bangers', cursive;
   font-size: 1.88rem;
   color: #fff;
 }
 
 h1 .highlight {
-  color: #6c41ec;
+  color: #ec9941;
 }
 
 h2 {
